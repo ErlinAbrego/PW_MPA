@@ -1,0 +1,19 @@
+<header>
+    <section class="branding">
+        <h1>Portales Web II</h1>
+    </section>
+    <nav>
+        <ul>
+            {{#with menuOptions}}
+                {{#each this}}
+                {{#if this.active}}
+                    <li><span class="active">{{label}}</span></li>
+                {{else}}
+                    <li><a href="{{url}}">{{label}}</a></li>
+                {{/if}}
+                {{/each}}
+            {{/with}}
+        </ul>
+    </nav>
+</header>
+

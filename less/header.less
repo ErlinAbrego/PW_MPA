@@ -1,0 +1,30 @@
+header {
+    background-color: @primary-color;
+    color: @primary-text-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: @defaul-padding;
+    padding-right: @defaul-padding;
+    .brandig {
+        margin: 0px;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0px;
+        li a, span {
+            display: inline-block;
+            padding: 0.5rem 0.8rem; 
+            color: @primary-text-color;
+            text-decoration: none;
+            .border-level-1()
+        }
+        li span.active {
+            background-color: darken(@primary-color, 20%);
+        }
+    }
+}
+
+
+

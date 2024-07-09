@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/less/estilo.less">
+    <title>Galeria</title>
+</head>
+<body>
+    {{>header}}
+</body>
+<main>
+    <section class="gallery">
+        {{#each images}}
+        <div class="gallery-item">
+            <img src="{{this.src}}" alt="{{this.alt}}">
+        </div>
+        {{/each}}
+    </section>
+</main>
+</html>
